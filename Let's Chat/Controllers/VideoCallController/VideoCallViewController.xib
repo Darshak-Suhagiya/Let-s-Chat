@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoCallViewController" customModule="Let_s_Chat" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraButton" destination="5H9-fS-wmY" id="DtA-q2-vks"/>
+                <outlet property="localContainer" destination="oWg-Rq-FOA" id="IHN-sb-ejP"/>
+                <outlet property="localVideoMutedIndicator" destination="2Te-C6-3u1" id="4iQ-dZ-h1o"/>
+                <outlet property="micButton" destination="nUh-Sl-u9x" id="bMi-Mm-YaX"/>
+                <outlet property="remoteContainer" destination="tYD-fh-gUg" id="1gi-sB-zy9"/>
+                <outlet property="remoteVideoMutedIndicator" destination="W1l-W8-Rh5" id="gcD-Y8-beh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tYD-fh-gUg" userLabel="remoteVideo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                </view>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="W1l-W8-Rh5" userLabel="remoteVideoMutedIndicator">
+                    <rect key="frame" x="110" y="234" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="W1l-W8-Rh5" secondAttribute="height" multiplier="1:1" id="mWL-CA-z5C"/>
+                        <constraint firstAttribute="width" constant="100" id="vak-fF-FTu"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWg-Rq-FOA" userLabel="localVideo">
+                    <rect key="frame" x="210" y="56" width="85" height="113.5"/>
+                    <color key="backgroundColor" red="0.51017522810000004" green="0.48047775030000001" blue="0.57149040699999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="85" id="1lZ-4S-SdL"/>
+                        <constraint firstAttribute="width" secondItem="oWg-Rq-FOA" secondAttribute="height" multiplier="3:4" id="EYE-5Q-dj9"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Te-C6-3u1">
+                    <rect key="frame" x="210" y="56" width="85" height="113.5"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat" translatesAutoresizingMaskIntoConstraints="NO" id="akY-xs-Weq" userLabel="localVideoMutedIndicator">
+                            <rect key="frame" x="24.5" y="38.5" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="36" id="8wH-Fs-qUi"/>
+                                <constraint firstAttribute="height" constant="36" id="tUN-56-jsn"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="akY-xs-Weq" firstAttribute="centerX" secondItem="2Te-C6-3u1" secondAttribute="centerX" id="Fu7-Wt-r6a"/>
+                        <constraint firstItem="akY-xs-Weq" firstAttribute="centerY" secondItem="2Te-C6-3u1" secondAttribute="centerY" id="esM-zG-G7s"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-Sl-u9x" userLabel="muteButton">
+                    <rect key="frame" x="42" y="459.5" width="55" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="nUh-Sl-u9x" secondAttribute="height" multiplier="1:1" id="QLa-2k-kia"/>
+                        <constraint firstAttribute="width" constant="55" id="bb7-V6-LVF"/>
+                    </constraints>
+                    <state key="normal" title="Mute" image="mic"/>
+                    <state key="selected" image="mute"/>
+                    <state key="highlighted" image="mic_pressed"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTk-zd-5d9" userLabel="hangUpButton">
+                    <rect key="frame" x="125" y="452" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="BTk-zd-5d9" secondAttribute="height" id="8x9-uB-mNM"/>
+                        <constraint firstAttribute="width" constant="70" id="b7N-wk-NLe"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Hang Up" image="end"/>
+                    <state key="selected" image="call"/>
+                    <state key="highlighted" image="end_pressed"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5H9-fS-wmY" userLabel="switchCameraButton">
+                    <rect key="frame" x="223" y="459.5" width="55" height="55"/>
+                    <state key="normal" title="Switch Camera" image="switch"/>
+                    <state key="selected" image="switch"/>
+                    <state key="highlighted" image="switch_pressed"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Te-C6-3u1" firstAttribute="width" secondItem="oWg-Rq-FOA" secondAttribute="width" id="1ic-DA-XMS"/>
+                <constraint firstItem="5H9-fS-wmY" firstAttribute="centerY" secondItem="BTk-zd-5d9" secondAttribute="centerY" id="1lk-jv-CjC"/>
+                <constraint firstItem="2Te-C6-3u1" firstAttribute="top" secondItem="oWg-Rq-FOA" secondAttribute="top" id="2sZ-YY-01N"/>
+                <constraint firstItem="W1l-W8-Rh5" firstAttribute="width" secondItem="W1l-W8-Rh5" secondAttribute="height" multiplier="1:1" id="9fT-CW-3sZ"/>
+                <constraint firstItem="BTk-zd-5d9" firstAttribute="width" secondItem="BTk-zd-5d9" secondAttribute="height" id="Be2-o0-pRn"/>
+                <constraint firstItem="tYD-fh-gUg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fju-ta-BnV"/>
+                <constraint firstItem="5H9-fS-wmY" firstAttribute="width" secondItem="nUh-Sl-u9x" secondAttribute="width" id="Hkm-Fc-VYl"/>
+                <constraint firstItem="tYD-fh-gUg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NpG-8g-9mR"/>
+                <constraint firstItem="nUh-Sl-u9x" firstAttribute="centerY" secondItem="BTk-zd-5d9" secondAttribute="centerY" id="QLj-RB-sjz"/>
+                <constraint firstAttribute="trailing" secondItem="tYD-fh-gUg" secondAttribute="trailing" id="Qku-iU-34S"/>
+                <constraint firstItem="nUh-Sl-u9x" firstAttribute="width" secondItem="nUh-Sl-u9x" secondAttribute="height" multiplier="1:1" id="R99-0J-aeV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oWg-Rq-FOA" secondAttribute="trailing" constant="25" id="Rrt-kc-iaC"/>
+                <constraint firstItem="oWg-Rq-FOA" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="36" id="THd-vS-5ty"/>
+                <constraint firstItem="5H9-fS-wmY" firstAttribute="leading" secondItem="BTk-zd-5d9" secondAttribute="trailing" constant="28" id="YsG-GJ-qzz"/>
+                <constraint firstItem="2Te-C6-3u1" firstAttribute="leading" secondItem="oWg-Rq-FOA" secondAttribute="leading" id="efy-NI-ofL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="BTk-zd-5d9" secondAttribute="bottom" constant="46" id="g0z-N7-4Y1"/>
+                <constraint firstAttribute="bottom" secondItem="tYD-fh-gUg" secondAttribute="bottom" id="o0q-bx-g9f"/>
+                <constraint firstItem="5H9-fS-wmY" firstAttribute="height" secondItem="nUh-Sl-u9x" secondAttribute="height" id="pWw-Vn-9Oy"/>
+                <constraint firstItem="W1l-W8-Rh5" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sAx-7o-OfX"/>
+                <constraint firstItem="BTk-zd-5d9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sRt-3V-tLH"/>
+                <constraint firstItem="BTk-zd-5d9" firstAttribute="leading" secondItem="nUh-Sl-u9x" secondAttribute="trailing" constant="28" id="sSr-Ay-riU"/>
+                <constraint firstItem="oWg-Rq-FOA" firstAttribute="width" secondItem="oWg-Rq-FOA" secondAttribute="height" multiplier="3:4" id="yTm-CE-HLa"/>
+                <constraint firstItem="W1l-W8-Rh5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zJ5-2c-UIN"/>
+                <constraint firstItem="2Te-C6-3u1" firstAttribute="height" secondItem="oWg-Rq-FOA" secondAttribute="height" id="zuu-hY-k3F"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="call" width="284" height="284"/>
+        <image name="chat" width="512" height="512"/>
+        <image name="end" width="292" height="292"/>
+        <image name="end_pressed" width="292" height="292"/>
+        <image name="mic" width="220" height="220"/>
+        <image name="mic_pressed" width="220" height="220"/>
+        <image name="mute" width="204" height="204"/>
+        <image name="switch" width="220" height="220"/>
+        <image name="switch_pressed" width="220" height="220"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

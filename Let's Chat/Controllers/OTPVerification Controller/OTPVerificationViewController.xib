@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPVerificationViewController" customModule="Let_s_Chat" customModuleProvider="target">
+            <connections>
+                <outlet property="editPhoneNumberButton" destination="g9V-4O-G2Q" id="y24-1X-EPg"/>
+                <outlet property="phoneNumberLable" destination="B85-2X-bE2" id="oi8-sa-v6g"/>
+                <outlet property="resendButton" destination="CG7-jR-tr4" id="hmN-Qp-QQs"/>
+                <outlet property="resendTimer" destination="E2T-pa-gSh" id="29U-2R-QoH"/>
+                <outlet property="stackViewOfOTP" destination="nfm-CZ-pup" id="66S-Zp-xGJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcP-v6-mV6">
+                    <rect key="frame" x="16" y="36" width="288" height="275"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JAk-fF-ozu">
+                            <rect key="frame" x="81.5" y="48" width="114" height="26.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                            <color key="textColor" red="0.2196078431372549" green="0.63529411764705879" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you an SMS with the code to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLv-yP-gvk">
+                            <rect key="frame" x="32" y="82.5" width="224" height="38.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                            <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="GTE-d9-g1o">
+                            <rect key="frame" x="68" y="125" width="152.5" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+911234567890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B85-2X-bE2">
+                                    <rect key="frame" x="0.0" y="0.0" width="130" height="20"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.pencil" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="g9V-4O-G2Q">
+                                    <rect key="frame" x="132" y="0.0" width="20.5" height="18.5"/>
+                                    <color key="tintColor" red="0.22032770509999999" green="0.63371729850000003" blue="0.48335796590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="7CJ-4m-Vwn" appends="YES" id="bY4-J7-1Fe"/>
+                                    </connections>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="WMP-pk-Gmh"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nfm-CZ-pup">
+                            <rect key="frame" x="30.5" y="177" width="227" height="32"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pAl-n4-XjV">
+                                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="0"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="32" id="31b-cV-9KY"/>
+                                        <constraint firstAttribute="height" constant="32" id="IDK-Ny-TUI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="cc-number"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4sc-c2-hGt">
+                                    <rect key="frame" x="39" y="0.0" width="32" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="1"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vtU-A7-ecZ">
+                                    <rect key="frame" x="78" y="0.0" width="32" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="2"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bk0-kL-am8">
+                                    <rect key="frame" x="117" y="0.0" width="32" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="3"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sv-nh-DpM">
+                                    <rect key="frame" x="156" y="0.0" width="32" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="4"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                    <connections>
+                                        <action selector="authenticateOTP:" destination="-1" eventType="editingDidEnd" id="Z6c-Z5-oDE"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJn-JL-EZG">
+                                    <rect key="frame" x="195" y="0.0" width="32" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Oz1-sh-HcF">
+                            <rect key="frame" x="83.5" y="233" width="174" height="18"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn't get?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Xw-nE-sfG">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG7-jR-tr4">
+                                    <rect key="frame" x="78" y="0.0" width="51.5" height="18"/>
+                                    <gestureRecognizers/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.22032770509999999" green="0.63371729850000003" blue="0.48335796590000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <connections>
+                                        <outletCollection property="gestureRecognizers" destination="xSh-f6-gdW" appends="YES" id="GF1-QE-HkG"/>
+                                    </connections>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:30" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2T-pa-gSh">
+                                    <rect key="frame" x="132.5" y="0.0" width="41.5" height="18"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="41.670000000000002" id="JaC-7F-Hpz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.2963423295" green="0.2963423295" blue="0.2963423295" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Oz1-sh-HcF" firstAttribute="trailing" secondItem="nfm-CZ-pup" secondAttribute="trailing" id="CMg-8g-S8F"/>
+                        <constraint firstAttribute="trailing" secondItem="kLv-yP-gvk" secondAttribute="trailing" constant="32" id="GO0-hJ-UKI"/>
+                        <constraint firstItem="JAk-fF-ozu" firstAttribute="top" secondItem="tcP-v6-mV6" secondAttribute="top" constant="48" id="Gsa-Rc-XWw"/>
+                        <constraint firstItem="nfm-CZ-pup" firstAttribute="top" secondItem="GTE-d9-g1o" secondAttribute="bottom" constant="32" id="I2k-Og-tha"/>
+                        <constraint firstAttribute="bottom" secondItem="Oz1-sh-HcF" secondAttribute="bottom" constant="24" id="S9T-8p-YNi"/>
+                        <constraint firstItem="kLv-yP-gvk" firstAttribute="leading" secondItem="tcP-v6-mV6" secondAttribute="leading" constant="32" id="TFz-gm-Mis"/>
+                        <constraint firstItem="Oz1-sh-HcF" firstAttribute="top" secondItem="nfm-CZ-pup" secondAttribute="bottom" constant="24" id="Wno-gN-Oj3"/>
+                        <constraint firstItem="GTE-d9-g1o" firstAttribute="top" secondItem="kLv-yP-gvk" secondAttribute="bottom" constant="4" id="aWv-MW-LeE"/>
+                        <constraint firstItem="JAk-fF-ozu" firstAttribute="centerX" secondItem="tcP-v6-mV6" secondAttribute="centerX" constant="-5.75" id="g7V-8C-NZo"/>
+                        <constraint firstItem="GTE-d9-g1o" firstAttribute="centerX" secondItem="tcP-v6-mV6" secondAttribute="centerX" id="k0Z-F1-Fph"/>
+                        <constraint firstItem="nfm-CZ-pup" firstAttribute="centerX" secondItem="tcP-v6-mV6" secondAttribute="centerX" id="tNp-W5-WBO"/>
+                        <constraint firstItem="kLv-yP-gvk" firstAttribute="top" secondItem="JAk-fF-ozu" secondAttribute="bottom" constant="8" id="zOs-k6-prB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tcP-v6-mV6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="Rl2-9S-64k"/>
+                <constraint firstItem="tcP-v6-mV6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="XR4-Nw-r3N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tcP-v6-mV6" secondAttribute="trailing" constant="16" id="oFR-zy-7Xt"/>
+            </constraints>
+            <point key="canvasLocation" x="131.25" y="-11.619718309859156"/>
+        </view>
+        <tapGestureRecognizer id="xSh-f6-gdW" userLabel="Tap On Resend">
+            <connections>
+                <action selector="onTapResend:" destination="-1" id="qMa-fC-2Ld"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="7CJ-4m-Vwn" userLabel="Tap On Edit">
+            <connections>
+                <action selector="onTapEditNumber:" destination="-1" id="PEt-XK-3YL"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="square.and.pencil" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

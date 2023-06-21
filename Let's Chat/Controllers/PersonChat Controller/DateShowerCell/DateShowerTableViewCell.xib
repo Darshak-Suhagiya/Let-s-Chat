@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DateCell" rowHeight="47" id="KGk-i7-Jjw" customClass="DateShowerTableViewCell" customModule="Let_s_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="206" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="206" height="47"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZr-a4-78O" userLabel="MainView">
+                        <rect key="frame" x="24" y="23" width="25.333333333333329" height="1"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qjz-ed-6fB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gMp-8m-bFW" userLabel="SupportiveViewForDate">
+                        <rect key="frame" x="49.333333333333336" y="0.0" width="107.33333333333331" height="47"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 feb 2023" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omj-RT-W2j">
+                                <rect key="frame" x="12" y="4" width="83.333333333333329" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Omj-RT-W2j" firstAttribute="top" secondItem="gMp-8m-bFW" secondAttribute="top" constant="4" id="9Nm-ju-x9a"/>
+                            <constraint firstItem="Omj-RT-W2j" firstAttribute="leading" secondItem="gMp-8m-bFW" secondAttribute="leading" constant="12" id="h3e-Fm-9CT"/>
+                            <constraint firstAttribute="trailing" secondItem="Omj-RT-W2j" secondAttribute="trailing" constant="12" id="iYi-M3-Po2"/>
+                            <constraint firstAttribute="bottom" secondItem="Omj-RT-W2j" secondAttribute="bottom" constant="4" id="qBK-fq-FJP"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDk-qk-XxT">
+                        <rect key="frame" x="156.66666666666666" y="23" width="25.333333333333343" height="1"/>
+                        <color key="backgroundColor" systemColor="secondaryLabelColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="cuC-7h-4Gg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HZr-a4-78O" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="0Hc-s2-VAK"/>
+                    <constraint firstItem="QDk-qk-XxT" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailing" constant="-24" id="7i2-A7-gcx"/>
+                    <constraint firstItem="QDk-qk-XxT" firstAttribute="leading" secondItem="gMp-8m-bFW" secondAttribute="trailing" id="8wP-Wm-xru"/>
+                    <constraint firstItem="HZr-a4-78O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="FCI-WJ-DsG"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gMp-8m-bFW" secondAttribute="trailing" constant="32" id="QDu-PD-mev"/>
+                    <constraint firstItem="gMp-8m-bFW" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="iN8-Jr-EBh"/>
+                    <constraint firstItem="gMp-8m-bFW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="kZr-6a-as4"/>
+                    <constraint firstItem="QDk-qk-XxT" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="mCl-LM-fps"/>
+                    <constraint firstItem="gMp-8m-bFW" firstAttribute="leading" secondItem="HZr-a4-78O" secondAttribute="trailing" id="qVh-Zb-N6j"/>
+                    <constraint firstAttribute="bottom" secondItem="gMp-8m-bFW" secondAttribute="bottom" id="s9A-r9-hBq"/>
+                    <constraint firstItem="gMp-8m-bFW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zT6-Iv-2o4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLable" destination="Omj-RT-W2j" id="W9p-eI-DlF"/>
+                <outlet property="supportiveView" destination="gMp-8m-bFW" id="oex-O4-LoV"/>
+            </connections>
+            <point key="canvasLocation" x="-3.0534351145038165" y="-143.3098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

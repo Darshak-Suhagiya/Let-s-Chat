@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="selectedPersonCell" id="gTV-IL-0wX" customClass="SelectedPerosnCollectionViewCell" customModule="Let_s_Chat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="109"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="109"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rtFY9UV7DlOdPFhOlZ8iBLBjEVC2" translatesAutoresizingMaskIntoConstraints="NO" id="C0C-ev-wqr">
+                        <rect key="frame" x="10" y="10" width="80" height="89"/>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="multiply.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mTx-Iq-rIm">
+                        <rect key="frame" x="70" y="6.5" width="24" height="23"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="VMg-C1-1wf"/>
+                            <constraint firstAttribute="width" constant="24" id="hV1-PA-6S5"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34Z-uR-v85">
+                        <rect key="frame" x="70" y="6" width="24" height="24"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain"/>
+                        <connections>
+                            <action selector="tapOnRemove:" destination="gTV-IL-0wX" eventType="touchUpInside" id="LM6-MY-Son"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="34Z-uR-v85" firstAttribute="width" secondItem="mTx-Iq-rIm" secondAttribute="width" id="3CF-ez-0tE"/>
+                <constraint firstAttribute="bottom" secondItem="C0C-ev-wqr" secondAttribute="bottom" constant="10" id="6i9-zo-IKP"/>
+                <constraint firstItem="C0C-ev-wqr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="6q0-rd-ncb"/>
+                <constraint firstItem="C0C-ev-wqr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="7YS-Hm-0TE"/>
+                <constraint firstItem="34Z-uR-v85" firstAttribute="height" secondItem="mTx-Iq-rIm" secondAttribute="height" id="BWf-Va-r8B"/>
+                <constraint firstItem="34Z-uR-v85" firstAttribute="centerY" secondItem="mTx-Iq-rIm" secondAttribute="centerY" id="N0y-bt-2r2"/>
+                <constraint firstAttribute="trailing" secondItem="C0C-ev-wqr" secondAttribute="trailing" constant="10" id="RhN-4x-sZK"/>
+                <constraint firstItem="C0C-ev-wqr" firstAttribute="top" secondItem="mTx-Iq-rIm" secondAttribute="top" constant="4" id="Utk-WC-Ara"/>
+                <constraint firstItem="C0C-ev-wqr" firstAttribute="trailing" secondItem="mTx-Iq-rIm" secondAttribute="trailing" constant="-4" id="emy-qN-QWv"/>
+                <constraint firstItem="34Z-uR-v85" firstAttribute="centerX" secondItem="mTx-Iq-rIm" secondAttribute="centerX" id="wRP-Qu-dT1"/>
+                <constraint firstItem="C0C-ev-wqr" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="wfy-mL-bJa"/>
+            </constraints>
+            <size key="customSize" width="100" height="109"/>
+            <connections>
+                <outlet property="personImage" destination="C0C-ev-wqr" id="0Hv-xs-7W2"/>
+                <outlet property="removeButtonImage" destination="mTx-Iq-rIm" id="rrC-pM-LFq"/>
+            </connections>
+            <point key="canvasLocation" x="65.625" y="8.97887323943662"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="multiply.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="rtFY9UV7DlOdPFhOlZ8iBLBjEVC2" width="554" height="554"/>
+    </resources>
+</document>

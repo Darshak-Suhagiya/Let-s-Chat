@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "09E1E17A-F417-498A-9E84-F7860FCDD964"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD2E9B09-752D-4C87-ACD3-5548CBDCDDA6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Let&apos;s Chat/Supporting Files/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
+            landmarkName = "userNotificationCenter(_:didReceive:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58B8BE09-EE1C-4810-9FDC-6ADD75E2190E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Let&apos;s Chat/Supporting Files/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "AppDelegate"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F1163C8B-3442-4059-9E27-4128A0496F9D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Let&apos;s Chat/Controllers/VideoCallController/VideoCallViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "runPythonCode()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F1163C8B-3442-4059-9E27-4128A0496F9D - 5fc489aebfdecb6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Let_s_Chat.VideoCallViewController.runPythonCode() -&gt; ()"
+                  moduleName = "Let-s Chat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/duiux-01/Documents/Section%20-%20G/Let_s_Chat_App/Let-s%20Chat/Let&apos;s%20Chat/Controllers/VideoCallController/VideoCallViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "1792">
+               </Location>
+               <Location
+                  uuid = "F1163C8B-3442-4059-9E27-4128A0496F9D - 5fc489aebfdecb6f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Let_s_Chat.VideoCallViewController.runPythonCode() -&gt; ()"
+                  moduleName = "Let-s Chat"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/duiux-01/Documents/Section%20-%20G/Let_s_Chat_App/Let-s%20Chat/Let&apos;s%20Chat/Controllers/VideoCallController/VideoCallViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "73"
+                  endingLineNumber = "73"
+                  offsetFromSymbolStart = "876">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
